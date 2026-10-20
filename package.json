@@ -1,5 +1,18 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "description": "WhatsApp 단톡방 메시지가 10개 쌓일 때마다 Claude로 한국어 요약을 만들어 WhatsApp으로 알려주는 서버",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0"
+  }
 }
